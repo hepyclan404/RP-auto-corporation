@@ -1,0 +1,88 @@
+.faq {
+
+    /* .faq__container */
+
+    &__container {
+    }
+
+    /* .faq__title */
+
+    &__title {
+        margin-bottom: 50px;
+    }
+
+    /* .faq__spoilers */
+
+    &__spoilers {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        @media screen and (max-width: 1320px) {
+            flex-direction: column;
+            gap: 40px;
+        }
+    }
+}
+.spoilers {
+
+    /* .spoilers__item */
+
+    &__item {
+        width: 100%;
+        @media screen and (min-width: 1321px) {
+            max-width: 630px;
+        }
+    }
+
+    /* .spoilers__title */
+
+    &__title {
+        position: relative;
+        width: 100%;
+        text-align: left;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: normal;
+        padding: 0px 15px 20px 15px;
+        border-bottom: 3px solid #430F54;
+        
+        &._spoller-active {
+            border-bottom: 3px solid #B61BA1;;
+        }
+
+        &>.spollers__title-text {
+            padding-right: 30px;
+        }
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            top: 12px;
+            right: 15px;
+            width: 12px;
+            height: 2px;
+            background-color: white;
+            transition: transform 0.3s ease;
+        }
+
+        &::after {
+            transform: translateY(-10%) rotate(-90deg);
+        }
+
+        &._spoller-active::after {
+            transform: translateY(-50%) rotate(0deg);
+            background-color: #E525CB;
+        }
+        &._spoller-active::before {
+            background-color: #E525CB;
+        }
+    }
+
+    /* .spoilers__body */
+
+    &__body {
+        margin-top: 15px;
+        padding: 0px 15px 0px 15px;
+    }
+}

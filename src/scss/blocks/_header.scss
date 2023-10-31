@@ -1,0 +1,196 @@
+.header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 90;
+	padding: 30px 0;
+	@media screen and (max-width: 529px) {
+		padding: 20px 0;
+	}
+	/* .header__container */
+
+	&__container {
+	}
+
+	/* .header__row */
+
+	&__row {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	/* .header__logo */
+
+	&__logo {
+		@media screen and (min-width: 677px) {
+			border-radius: 5px;
+			background: rgba(42, 35, 46, 0.50);
+		}
+	}
+
+	/* .header__logo-body */
+
+	&__logo-body {
+		@media screen and (min-width: 677px) {
+			padding: 5px 15px 5px 5px;
+			display: flex;
+			align-items: center;
+			max-width: 330px;
+			gap: 15px;
+		}
+	}
+
+	/* .header__logo-img */
+
+	&__logo-img {
+		width: 100%;
+		max-width: 130px;
+
+		img {
+			border-radius: 6px;
+		}
+	}
+
+	/* .header__logo-text */
+
+	&__logo-text {
+		font-weight: 500;
+		line-height: 100%;
+		color: white;
+
+		span {
+			font-weight: 700;
+			line-height: 100%;
+			color: var(--accent);
+		}
+		@media screen and (max-width: 676px) {
+			display: none;
+		}
+	}
+
+	/* .header__elems */
+
+	&__elems {
+		display: flex;
+		gap: 50px;
+		@media screen and (max-width: 767px) {
+			gap: 30px;
+		}
+		@media screen and (max-width: 430px) {
+			gap: 20px;
+		}
+	}
+
+	/* .header__menu */
+
+	&__menu {
+		@media screen and (max-width: 1130px) {
+			display: none;
+		}
+	}
+
+	/* .header__phone */
+
+	&__phone {
+	}
+
+	/* .header__phone-list */
+
+	&__phone-list {
+	}
+
+	/* .header__phone-item */
+
+	&__phone-item {
+	}
+
+	/* .header__phone-link */
+
+	&__phone-link {
+		display: flex;
+		align-items: flex-start;
+		gap: 10px;
+		color: var(--text-color);
+		transition: all 0.3s ease;
+
+		&:hover {
+			color: var(--accent);
+		}
+	}
+
+	/* .header__phone-ico */
+
+	&__phone-ico {
+		display: flex;
+		font-size: 18px;
+	}
+
+	/* .header__phone-text */
+
+	&__phone-text {
+	}
+
+	/* .header__socials */
+
+	&__socials {
+	}
+
+	/* .header__socials-list */
+
+	&__socials-list {
+		display: flex;
+		gap: 15px;
+		@media screen and (max-width: 479px) {
+			display: none;
+		}
+	}
+
+	/* .header__socials-item */
+
+	&__socials-item {
+	}
+
+	/* .header__socials-link */
+
+	&__socials-link {
+		font-size: 18px;
+		color: var(--white);
+		transition: all 0.3s ease;
+
+		&:hover {
+			color: var(--accent);
+		}
+	}
+
+	/* .header__link-ico */
+
+	&__link-ico {
+	}
+}
+
+.menu {
+
+	/* .menu__list */
+
+	&__list {
+		display: flex;
+		gap: 40px;
+	}
+
+	/* .menu__item */
+
+	&__item {
+	}
+
+	/* .menu__link */
+
+	&__link {
+		color: var(--text-color);
+		transition: all 0.3s ease;
+
+		&:hover {
+			color: var(--accent);
+		}
+	}
+}
